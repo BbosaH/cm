@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="colorTextWithBg">#ffffff</color>
+
+    <color name="faded_gray" type="color">#827f93</color>
+    <color name="dark_gray" type="color">#787878</color>
+    <color name="my_red" type="color">#EA2925</color>
+    <color name="my_orange" type="color">#FF7F00</color>
+    <color name="my_blue" type="color">#1C47C6</color>
+
+    <color name="light_green" type="color">#32B232</color>
+    <color name="white">#ffffff</color>
+</resources>

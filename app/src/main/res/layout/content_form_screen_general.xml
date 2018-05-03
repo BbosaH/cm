@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.cm.activities.FormScreenGeneral"
+    tools:showIn="@layout/activity_form_screen_general">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                >
+
+
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:text="Facility"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="160dp"
+                            android:background="@drawable/new_text_input"
+                            android:layout_height="50dp"
+                            >
+
+
+                            <com.jaredrummler.materialspinner.MaterialSpinner
+                                android:id="@+id/facility_spinner"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"/>
+
+                        </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:text="CDDP point"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="160dp"
+                        android:background="@drawable/new_text_input"
+                        android:layout_height="50dp"
+                        >
+
+
+                        <com.jaredrummler.materialspinner.MaterialSpinner
+                            android:id="@+id/cddp_point_spinner"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"/>
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+
+
+
+
+             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Visit Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:background="@drawable/new_text_input"
+                        android:layout_height="50dp"
+                        >
+
+
+                        <TextView
+                            android:id="@+id/visit_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Peer Leader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:background="@drawable/new_text_input"
+                        android:layout_height="50dp"
+                        >
+
+
+                        <com.jaredrummler.materialspinner.MaterialSpinner
+                            android:id="@+id/peer_leader_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:elevation="2dp"
+                android:focusedByDefault="true"
+                android:background="@drawable/search_edit"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.SearchView>
+
+
+            <TextView
+                android:id="@+id/error_tv"
+                android:layout_width="match_parent"
+                android:text="Peer leader does not exist"
+                android:layout_height="wrap_content"/>
+
+
+            <com.mikepenz.iconics.view.IconicsButton
+                android:id="@+id/pres_save"
+                style="?android:textAppearanceSmall"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16dp"
+                android:text="Save {gmd-check}"
+                android:background="@drawable/loginback"
+                android:textColor="@color/colorTextWithBg"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:textStyle="bold" />
+
+
+</LinearLayout>
+
+
+
+
+
+
+

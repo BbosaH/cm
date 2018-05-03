@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.cm.activities.NextAppointment"
+    tools:showIn="@layout/activity_next_appointment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        >
+
+        <TextView
+            android:text="Patient Name :"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Denis Rackla"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        >
+
+        <TextView
+            android:text="CDDP Patient Number :"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="37462800948837"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:text="Next Appointment"
+        android:layout_width="match_parent"
+        android:textStyle=""
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/colorPrimaryDark"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        >
+
+        <TextView
+            android:text="Date of next Appointment ?"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="160dp"
+            android:background="@drawable/new_text_input"
+            android:layout_height="50dp"
+            >
+
+
+            <TextView
+                android:id="@+id/next_appointment_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        >
+
+        <TextView
+            android:text="Switched to facility for ART Model?"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="160dp"
+            android:background="@drawable/new_text_input"
+            android:layout_height="50dp"
+            >
+
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/art_model_spinner"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        >
+
+        <TextView
+            android:text="Reffered to facility for one off Treatment?"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="160dp"
+            android:background="@drawable/new_text_input"
+            android:layout_height="50dp"
+            >
+
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/refferal_spinner"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        >
+
+        <TextView
+            android:text="Peer leaders comment"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="160dp"
+            android:background="@drawable/new_text_input"
+            android:layout_height="50dp"
+            >
+
+
+            <EditText
+                android:id="@+id/peer_leader_comment"
+                android:layout_width="match_parent"
+                android:hint=""
+                android:layout_height="260dp"
+                android:background="@android:color/transparent"
+                android:imeActionId="@+id/login"
+                android:inputType="text|textMultiLine"
+                android:imeActionLabel="Symptoms"
+                android:imeOptions="actionUnspecified"
+                android:gravity="top"
+                android:singleLine="false"
+
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Error Not Tb Asessment!!"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity=""
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="prev"
+            android:layout_width="100dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="next >"
+            android:id="@+id/patient_assessment_next"
+            android:layout_width="100dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+

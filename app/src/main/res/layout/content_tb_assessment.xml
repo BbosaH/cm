@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.cm.activities.TBAssessmentActivity"
+    tools:showIn="@layout/activity_cb_assessment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        >
+
+        <TextView
+            android:text="Patient Name :"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Denis Rackla"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        >
+
+        <TextView
+            android:text="CDDP Patient Number :"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="37462800948837"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:text="Tb Assessment"
+        android:layout_width="match_parent"
+        android:textStyle=""
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/colorPrimaryDark"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        >
+
+        <TextView
+            android:text="Has Cough"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="160dp"
+                android:background="@drawable/new_text_input"
+                android:layout_height="50dp"
+                >
+
+
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/has_cough_spinner"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        >
+
+        <TextView
+            android:text="Has Fever"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="160dp"
+            android:background="@drawable/new_text_input"
+            android:layout_height="50dp"
+            >
+
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/has_fever_spinner"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        >
+
+        <TextView
+            android:text="Has noticable weight loss"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="160dp"
+            android:background="@drawable/new_text_input"
+            android:layout_height="50dp"
+            >
+
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/weight_loss_spinner"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        >
+
+        <TextView
+            android:text="Excessive Night Sweat"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="160dp"
+            android:background="@drawable/new_text_input"
+            android:layout_height="50dp"
+            >
+
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/sweat_spinner"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Error Not Tb Asessment!!"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity=""
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="prev"
+            android:layout_width="100dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="next >"
+            android:id="@+id/tb_assessment_next"
+            android:layout_width="100dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+

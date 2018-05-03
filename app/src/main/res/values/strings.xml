@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">cm</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_phone">phone number</string>
+    <string name="prompt_password">password</string>
+
+
+    <string name="action_sign_in">{faw-key}    Log in </string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="title_activity_tb_assessment">TB Assessment</string>
+    <string name="title_activity_prescription">PrescriptionActivity</string>
+    <string name="search_hint">Search …</string>
+    <string name="title_activity_patient_assessment">PatientAssessmentActivity</string>
+    <string name="title_activity_female_patient_asessment">FemalePatientAsessment</string>
+    <string name="title_activity_drug_administration">DrugAdministration</string>
+
+
+    <string name="prompt_uname">username</string>
+    <string name="title_activity_next_appointment">NextAppointment</string>
+
+
+</resources>
